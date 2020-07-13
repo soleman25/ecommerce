@@ -17,15 +17,26 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="@yield('#bg-body')">
-    <div>
-        @include('layouts._navbar')
+    <div id="app">
+    <!-- /header -->
+        <header id="header">
+          @include('layouts._header')
+          @include('layouts._navbar')
+        </header>
+        <!-- /header -->
 
-        <main class="py-4">
+   <!-- content-->
+       <main class="py-6">
             
             @yield('content')
 
         </main>
-    </div>
+        <!-- content-->
+
+           <!-- footer-->
+       
+   </div>
+       <!-- footer-->
 </body>
 <script src="{{mix('/js/app.js')}}"></script>
 </html>
