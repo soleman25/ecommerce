@@ -10,12 +10,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="">Kategori</a></li>
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                      Kategori <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <h6 class="dropdown-header">
+                            Kategori 1
+                        </h6>
+                        <div class ="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Kategori 2</a>
+                    </div>
+                </li>
             </ul>
             <div class="input-group mb-0">
-              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <input type="text" class="form-control" placeholder="Cari disini" aria-label="Recipient's username" aria-describedby="button-addon2">
               <div class="input-group-append">
-                <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">Cari</button>
               </div>
             </div>
 

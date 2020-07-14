@@ -34,7 +34,7 @@
         <!-- content-->
 
            <!-- footer-->
-       
+        @include('layouts._footer')
    </div>
        <!-- footer-->
 </body>
